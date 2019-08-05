@@ -55,6 +55,7 @@ class Solution(object):
             else:
                 temp += i
                 temp = temp[temp.index(i)+1:]
+                print(temp)
         return length
 
 
