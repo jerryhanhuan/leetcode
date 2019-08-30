@@ -27,7 +27,9 @@ class Solution:
             x = 1/x
             n = abs(n)
         if n % 2:
-            return self.myPow(x,n-1)*x
+            #error,递归深度失败错误
+            #return x * self.myPow(x*x,n/2)
+            return x * self.myPow(x,n-1)
         else:
             return self.myPow(x*x,n/2)
 
